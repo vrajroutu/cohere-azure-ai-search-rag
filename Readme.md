@@ -21,7 +21,6 @@ Semantic search over large datasets can require a lot of memory, which is expens
    
 Cohere Embed is the first embedding model that natively supports int8 and binary embeddings. When evaluated on the MIRACL benchmark, a semantic search benchmark developed by the University of Waterloo across 18 languages, our Embed v3 - int8 and Embed v3 - binary significantly outperform other embedding models, like OpenAI text-embedding-3-large, while reducing your cost 100x for memory from an estimated $130k to $1,300 annually.  
 
-![RAG Architecture](assets/evals.png)
    
 ## Features  
    
