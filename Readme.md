@@ -1,8 +1,10 @@
 # Cohere & Azure AI Search RAG Demo  
+
+![Cohere and Azure AI Logos] (./assets/cohererag.png)
    
 Welcome to the Cohere & Azure AI Search Retrieval-Augmented Generation (RAG) demo! This project showcases how to leverage Cohere Embed V3 for generating int8 and binary embeddings, significantly reducing memory costs while maintaining high search quality. These embeddings are integrated with Azure AI Search to perform RAG using CommandR+ in Azure AI Studio.  
    
-## Table of Contents  
+## Table of Contents
 - [Introduction](#introduction)  
 - [Features](#features)  
 - [Setup](#setup)  
