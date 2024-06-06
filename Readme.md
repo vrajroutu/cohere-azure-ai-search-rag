@@ -83,7 +83,8 @@ Cohere Embed is the first embedding model that natively supports int8 and binary
     ```  
    
 2. Open your browser and navigate to `http://localhost:8501`.  
-   
+
+![RAG Architecture](assets/screen.png)
 ### Uploading Files and Asking Questions  
    
 - **Upload Files**: Use the sidebar to upload PDF files. The .pdf from these files will be extracted and indexed.  
