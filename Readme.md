@@ -18,8 +18,11 @@ Welcome to the Cohere & Azure AI Search Retrieval-Augmented Generation (RAG) dem
 Semantic search over large datasets can require a lot of memory, which is expensive to host in a vector database. For example, searching across all of Wikipedia’s data requires storing 250 million embeddings. With 1024 dimensions per embedding and each dimension as float32 with 4 bytes, you will need close to 1 TB of memory on a server.  
 
 
+
    
 ![RAG Architecture](assets/rag.png)
+
+Demo URL: https://cohererag.streamlit.app/
 
    
 ## Features  
