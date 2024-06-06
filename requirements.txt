@@ -1,0 +1,10 @@
+cohere 
+streamlit
+pymupdf
+--pre azure-search-documents
+python-dotenv
+azure-search-documents==11.6.0b2
+cohere
+azure-identity
+ipywidgets
+numpy
