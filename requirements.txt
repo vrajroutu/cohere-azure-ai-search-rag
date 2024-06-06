@@ -1,9 +1,8 @@
 cohere 
 streamlit
 pymupdf
---pre azure-search-documents
+azure-search-documents 11.6.0b4
 python-dotenv
-azure-search-documents==11.6.0b2
 cohere
 azure-identity
 ipywidgets
