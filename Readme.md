@@ -1,6 +1,6 @@
 # Cohere & Azure AI Search RAG Demo  
 
-![Cohere and Azure AI] (assets/cohererag.png)
+![RAG Architecture](assets/cohererag.png)
 
    
 Welcome to the Cohere & Azure AI Search Retrieval-Augmented Generation (RAG) demo! This project showcases how to leverage Cohere Embed V3 for generating int8 and binary embeddings, significantly reducing memory costs while maintaining high search quality. These embeddings are integrated with Azure AI Search to perform RAG using CommandR+ in Azure AI Studio.  
@@ -16,8 +16,12 @@ Welcome to the Cohere & Azure AI Search Retrieval-Augmented Generation (RAG) dem
 ## Introduction  
    
 Semantic search over large datasets can require a lot of memory, which is expensive to host in a vector database. For example, searching across all of Wikipedia’s data requires storing 250 million embeddings. With 1024 dimensions per embedding and each dimension as float32 with 4 bytes, you will need close to 1 TB of memory on a server.  
+
+![RAG Architecture](assets/binary_emb.png)
    
 Cohere Embed is the first embedding model that natively supports int8 and binary embeddings. When evaluated on the MIRACL benchmark, a semantic search benchmark developed by the University of Waterloo across 18 languages, our Embed v3 - int8 and Embed v3 - binary significantly outperform other embedding models, like OpenAI text-embedding-3-large, while reducing your cost 100x for memory from an estimated $130k to $1,300 annually.  
+
+![RAG Architecture](assets/evals.png)
    
 ## Features  
    
@@ -31,9 +35,12 @@ Cohere Embed is the first embedding model that natively supports int8 and binary
    
 ### Prerequisites  
    
-- Python 3.7 or higher  
+- Python 3.9 or higher  
 - Streamlit  
-- Cohere API Key  
+- Cohere API Key
+- Cohere Command R+
+- Cohere English Embedding Model
+- Cohere Multilingual Embedding Model
 - Azure AI Search API Key  
 - Azure AI Studio  
    
@@ -80,7 +87,7 @@ Cohere Embed is the first embedding model that natively supports int8 and binary
    
 ### Uploading Files and Asking Questions  
    
-- **Upload Files**: Use the sidebar to upload PDF files. The text from these files will be extracted and indexed.  
+- **Upload Files**: Use the sidebar to upload PDF files. The .pdf from these files will be extracted and indexed.  
 - **Ask Questions**: Type your questions in the chat input at the bottom center of the page. The system will perform a vector search using the uploaded documents and provide responses.  
    
 ### Example Questions  
