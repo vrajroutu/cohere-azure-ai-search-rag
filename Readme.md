@@ -14,7 +14,7 @@ Welcome to the Cohere & Azure AI Search Retrieval-Augmented Generation (RAG) dem
    
 Semantic search over large datasets can require a lot of memory, which is expensive to host in a vector database. For example, searching across all of Wikipedia’s data requires storing 250 million embeddings. With 1024 dimensions per embedding and each dimension as float32 with 4 bytes, you will need close to 1 TB of memory on a server.  
    
-We are excited to announce that Cohere Embed is the first embedding model that natively supports int8 and binary embeddings. When evaluated on the MIRACL benchmark, a semantic search benchmark developed by the University of Waterloo across 18 languages, our Embed v3 - int8 and Embed v3 - binary significantly outperform other embedding models, like OpenAI text-embedding-3-large, while reducing your cost 100x for memory from an estimated $130k to $1,300 annually.  
+Cohere Embed is the first embedding model that natively supports int8 and binary embeddings. When evaluated on the MIRACL benchmark, a semantic search benchmark developed by the University of Waterloo across 18 languages, our Embed v3 - int8 and Embed v3 - binary significantly outperform other embedding models, like OpenAI text-embedding-3-large, while reducing your cost 100x for memory from an estimated $130k to $1,300 annually.  
    
 ## Features  
    
